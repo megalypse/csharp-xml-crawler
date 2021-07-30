@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
+    "net5.0": {
       "coverlet.collector/3.0.2": {
         "type": "package",
         "build": {
@@ -1592,6 +1592,15 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "XmlCrawler/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/XmlCrawler.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/XmlCrawler.dll": {}
+        }
+      },
       "xunit/2.4.1": {
         "type": "package",
         "dependencies": {
@@ -1669,16 +1678,6 @@
         "type": "package",
         "build": {
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
-        }
-      },
-      "XmlCrawler/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "compile": {
-          "bin/placeholder/XmlCrawler.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/XmlCrawler.dll": {}
         }
       }
     }
@@ -5782,6 +5781,17 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "XmlCrawler/1.0.0": {
+      "sha512": "O5OA3kCpTZ5C1irq//hvqZtAh08K5No53WW3tn883mREvdTt6Oee4O2pNR8V04fLhUbgHXUmUAU2OiRsY09h6w==",
+      "type": "package",
+      "path": "xmlcrawler/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net5.0/XmlCrawler.dll",
+        "xmlcrawler.1.0.0.nupkg.sha512",
+        "xmlcrawler.nuspec"
+      ]
+    },
     "xunit/2.4.1": {
       "sha512": "XNR3Yz9QTtec16O0aKcO6+baVNpXmOnPUxDkCY97J+8krUYxPvXT1szYYEUdKk4sB8GOI2YbAjRIOm8ZnXRfzQ==",
       "type": "package",
@@ -5916,15 +5926,10 @@
         "xunit.runner.visualstudio.2.4.3.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
-    },
-    "XmlCrawler/1.0.0": {
-      "type": "project",
-      "path": "../XmlCrawler/XmlCrawler.csproj",
-      "msbuildProject": "../XmlCrawler/XmlCrawler.csproj"
     }
   },
   "projectFileDependencyGroups": {
-    "net6.0": [
+    "net5.0": [
       "Microsoft.NET.Test.Sdk >= 16.9.4",
       "XmlCrawler >= 1.0.0",
       "coverlet.collector >= 3.0.2",
@@ -5949,7 +5954,7 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "net5.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -5957,13 +5962,9 @@
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "projectReferences": {
-            "C:\\Users\\User\\source\\repos\\XmlCrawler\\XmlCrawler\\XmlCrawler.csproj": {
-              "projectPath": "C:\\Users\\User\\source\\repos\\XmlCrawler\\XmlCrawler\\XmlCrawler.csproj"
-            }
-          }
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -5973,12 +5974,16 @@
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "net5.0": {
+        "targetAlias": "net5.0",
         "dependencies": {
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[16.9.4, )"
+          },
+          "XmlCrawler": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           },
           "coverlet.collector": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

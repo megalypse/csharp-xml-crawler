@@ -1,7 +1,16 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>1.0.0</Version>
+    <Authors>Bruno Alliguieri</Authors>
+    <Company>alliguieri.bruno</Company>
+    <Product>Alliguieri.XmlCrawler</Product>
+    <Description>A package to make your life even more happy and simple when messing with XML files.</Description>
+    <Copyright>MIT</Copyright>
+    <RepositoryUrl>https://github.com/megalypse/csharp-xml-crawler</RepositoryUrl>
+    <PackageTags>xml;crawler;xml-crawler;</PackageTags>
   </PropertyGroup>
 
 </Project>
