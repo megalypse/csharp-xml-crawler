@@ -34,7 +34,16 @@ namespace Tests
             string xmlString = File.ReadAllText("./random_xml.xml");
             XmlCrawler crawler = new(xmlString);
 
-            Assert.Equal("Gambardella, Matthew", crawler.FindNode("book").GetChildValue("author"));
+            Assert.Equal("Gambardella, Matthew", crawler.FindNodeOrFail("book").GetChildValue("author"));
+        }
+
+        [Fact]
+        public void ReturnsNullWhenChildDoesNotExist()
+        {
+            string xmlString = File.ReadAllText("./random_xml.xml");
+            XmlCrawler crawler = new(xmlString);
+
+            Assert.Null(crawler.FindNodeOrFail("book").GetChildValue("authore"));
         }
 
         [Fact]
@@ -43,7 +52,7 @@ namespace Tests
             string xmlString = File.ReadAllText("./random_xml.xml");
             XmlCrawler crawler = new(xmlString);
 
-            crawler.FindNode("book");
+            crawler.FindNodeOrFail("book");
             crawler.Reset();
 
             Assert.Equal("catalog", crawler.CurrentNode.Name.LocalName);
@@ -55,9 +64,21 @@ namespace Tests
             string xmlString = File.ReadAllText("./random_xml.xml");
             XmlCrawler crawler = new(xmlString);
 
-            crawler.FindNode("book");
+            crawler.FindNodeOrFail("book");
 
-            Assert.Throws<NodeNotFoundException>(() => crawler.FindNode("oudri kanda larrai"));
+            Assert.Throws<NodeNotFoundException>(() => crawler.FindNodeOrFail("oudri kanda larrai"));
+        }
+
+        [Fact]
+        public void ReturnsNullWhenNodeNotFound()
+        {
+            string xmlString = File.ReadAllText("./random_xml.xml");
+            XmlCrawler crawler = new(xmlString);
+
+            var result = crawler.FindNode("unexistent node");
+
+            Assert.Null(result);
+            Assert.Equal("catalog", crawler.CurrentNode.Name.LocalName);
         }
     }
 }

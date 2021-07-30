@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {
+    "net5.0": {
       "coverlet.collector/3.0.2": {
         "type": "package",
         "build": {
@@ -5924,7 +5924,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net6.0": [
+    "net5.0": [
       "Microsoft.NET.Test.Sdk >= 16.9.4",
       "XmlCrawler >= 1.0.0",
       "coverlet.collector >= 3.0.2",
@@ -5933,35 +5933,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "/Users/brunoalliguieri/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\XmlCrawler\\Tests\\Tests.csproj",
+      "projectUniqueName": "/Users/brunoalliguieri/Documents/Projetos/C#/csharp-xml-crawler/Tests/Tests.csproj",
       "projectName": "Tests",
-      "projectPath": "C:\\Users\\User\\source\\repos\\XmlCrawler\\Tests\\Tests.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\XmlCrawler\\Tests\\obj\\",
+      "projectPath": "/Users/brunoalliguieri/Documents/Projetos/C#/csharp-xml-crawler/Tests/Tests.csproj",
+      "packagesPath": "/Users/brunoalliguieri/.nuget/packages/",
+      "outputPath": "/Users/brunoalliguieri/Documents/Projetos/C#/csharp-xml-crawler/Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/brunoalliguieri/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net6.0"
+        "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "D:\\Projetos\\C#\\local_packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net5.0": {
+          "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\User\\source\\repos\\XmlCrawler\\XmlCrawler\\XmlCrawler.csproj": {
-              "projectPath": "C:\\Users\\User\\source\\repos\\XmlCrawler\\XmlCrawler\\XmlCrawler.csproj"
+            "/Users/brunoalliguieri/Documents/Projetos/C#/csharp-xml-crawler/XmlCrawler/XmlCrawler.csproj": {
+              "projectPath": "/Users/brunoalliguieri/Documents/Projetos/C#/csharp-xml-crawler/XmlCrawler/XmlCrawler.csproj"
             }
           }
         }
@@ -5973,8 +5970,8 @@
       }
     },
     "frameworks": {
-      "net6.0": {
-        "targetAlias": "net6.0",
+      "net5.0": {
+        "targetAlias": "net5.0",
         "dependencies": {
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
@@ -6012,7 +6009,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.6.21355.2\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
       }
     }
   }

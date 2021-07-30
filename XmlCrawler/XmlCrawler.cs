@@ -23,11 +23,22 @@ namespace CrawlerXml
         public string Value { get => CurrentNode.Value; }
         private XElement RootNode { get; }
 
-        public string GetChildValue(string childName) => Find(childName).Value;
+        public string GetChildValue(string childName) => Find(childName)?.Value;
 
         public XmlCrawler FindNode(string nodeName)
         {
-            CurrentNode = Find(nodeName);
+            var searchResult = Find(nodeName);
+
+            if (searchResult is null)
+                return null;
+
+            CurrentNode = searchResult;
+            return this;
+        }
+
+        public XmlCrawler FindNodeOrFail(string nodeName)
+        {
+            CurrentNode = Find(nodeName) ?? throw new NodeNotFoundException(nodeName);
             return this;
         }
 
@@ -38,18 +49,11 @@ namespace CrawlerXml
 
         private XElement Find(string nodeName)
         {
-            try
-            {
-                return CurrentNode
-                  .Elements()
-                  .ToList()
-                  .Where(x => x.Name.LocalName == nodeName)
-                  .Single();
-            }
-            catch (Exception)
-            {
-                throw new NodeNotFoundException(nodeName);
-            }
+            return CurrentNode
+              .Elements()
+              .ToList()
+              .Where(x => x.Name.LocalName == nodeName)
+              .SingleOrDefault();
         }
     }
 }
