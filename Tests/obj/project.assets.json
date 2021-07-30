@@ -1592,15 +1592,6 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "XmlCrawler/1.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net5.0/XmlCrawler.dll": {}
-        },
-        "runtime": {
-          "lib/net5.0/XmlCrawler.dll": {}
-        }
-      },
       "xunit/2.4.1": {
         "type": "package",
         "dependencies": {
@@ -1678,6 +1669,16 @@
         "type": "package",
         "build": {
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
+        }
+      },
+      "XmlCrawler/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/XmlCrawler.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/XmlCrawler.dll": {}
         }
       }
     }
@@ -5781,17 +5782,6 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "XmlCrawler/1.0.0": {
-      "sha512": "O5OA3kCpTZ5C1irq//hvqZtAh08K5No53WW3tn883mREvdTt6Oee4O2pNR8V04fLhUbgHXUmUAU2OiRsY09h6w==",
-      "type": "package",
-      "path": "xmlcrawler/1.0.0",
-      "files": [
-        ".nupkg.metadata",
-        "lib/net5.0/XmlCrawler.dll",
-        "xmlcrawler.1.0.0.nupkg.sha512",
-        "xmlcrawler.nuspec"
-      ]
-    },
     "xunit/2.4.1": {
       "sha512": "XNR3Yz9QTtec16O0aKcO6+baVNpXmOnPUxDkCY97J+8krUYxPvXT1szYYEUdKk4sB8GOI2YbAjRIOm8ZnXRfzQ==",
       "type": "package",
@@ -5926,6 +5916,11 @@
         "xunit.runner.visualstudio.2.4.3.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "XmlCrawler/1.0.0": {
+      "type": "project",
+      "path": "../XmlCrawler/XmlCrawler.csproj",
+      "msbuildProject": "../XmlCrawler/XmlCrawler.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5938,33 +5933,34 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "/Users/brunoalliguieri/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\XmlCrawler\\Tests\\Tests.csproj",
+      "projectUniqueName": "/Users/brunoalliguieri/Documents/Projetos/C#/csharp-xml-crawler/Tests/Tests.csproj",
       "projectName": "Tests",
-      "projectPath": "C:\\Users\\User\\source\\repos\\XmlCrawler\\Tests\\Tests.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\XmlCrawler\\Tests\\obj\\",
+      "projectPath": "/Users/brunoalliguieri/Documents/Projetos/C#/csharp-xml-crawler/Tests/Tests.csproj",
+      "packagesPath": "/Users/brunoalliguieri/.nuget/packages/",
+      "outputPath": "/Users/brunoalliguieri/Documents/Projetos/C#/csharp-xml-crawler/Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/brunoalliguieri/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "D:\\Projetos\\C#\\local_packages": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/brunoalliguieri/Documents/Projetos/C#/csharp-xml-crawler/XmlCrawler/XmlCrawler.csproj": {
+              "projectPath": "/Users/brunoalliguieri/Documents/Projetos/C#/csharp-xml-crawler/XmlCrawler/XmlCrawler.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -5980,10 +5976,6 @@
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[16.9.4, )"
-          },
-          "XmlCrawler": {
-            "target": "Package",
-            "version": "[1.0.0, )"
           },
           "coverlet.collector": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -6017,7 +6009,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.6.21355.2\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.302/RuntimeIdentifierGraph.json"
       }
     }
   }
