@@ -10,15 +10,3 @@ C:/Users/User/source/repos/XmlCrawler/XmlCrawler/obj/Debug/net5.0/XmlCrawler.csp
 C:/Users/User/source/repos/XmlCrawler/XmlCrawler/obj/Debug/net5.0/XmlCrawler.dll
 C:/Users/User/source/repos/XmlCrawler/XmlCrawler/obj/Debug/net5.0/ref/XmlCrawler.dll
 C:/Users/User/source/repos/XmlCrawler/XmlCrawler/obj/Debug/net5.0/XmlCrawler.pdb
-/Users/brunoalliguieri/Documents/Projetos/C#/csharp-xml-crawler/XmlCrawler/bin/Debug/net5.0/XmlCrawler.deps.json
-/Users/brunoalliguieri/Documents/Projetos/C#/csharp-xml-crawler/XmlCrawler/bin/Debug/net5.0/XmlCrawler.dll
-/Users/brunoalliguieri/Documents/Projetos/C#/csharp-xml-crawler/XmlCrawler/bin/Debug/net5.0/ref/XmlCrawler.dll
-/Users/brunoalliguieri/Documents/Projetos/C#/csharp-xml-crawler/XmlCrawler/bin/Debug/net5.0/XmlCrawler.pdb
-/Users/brunoalliguieri/Documents/Projetos/C#/csharp-xml-crawler/XmlCrawler/obj/Debug/net5.0/XmlCrawler.csproj.AssemblyReference.cache
-/Users/brunoalliguieri/Documents/Projetos/C#/csharp-xml-crawler/XmlCrawler/obj/Debug/net5.0/XmlCrawler.GeneratedMSBuildEditorConfig.editorconfig
-/Users/brunoalliguieri/Documents/Projetos/C#/csharp-xml-crawler/XmlCrawler/obj/Debug/net5.0/XmlCrawler.AssemblyInfoInputs.cache
-/Users/brunoalliguieri/Documents/Projetos/C#/csharp-xml-crawler/XmlCrawler/obj/Debug/net5.0/XmlCrawler.AssemblyInfo.cs
-/Users/brunoalliguieri/Documents/Projetos/C#/csharp-xml-crawler/XmlCrawler/obj/Debug/net5.0/XmlCrawler.csproj.CoreCompileInputs.cache
-/Users/brunoalliguieri/Documents/Projetos/C#/csharp-xml-crawler/XmlCrawler/obj/Debug/net5.0/XmlCrawler.dll
-/Users/brunoalliguieri/Documents/Projetos/C#/csharp-xml-crawler/XmlCrawler/obj/Debug/net5.0/ref/XmlCrawler.dll
-/Users/brunoalliguieri/Documents/Projetos/C#/csharp-xml-crawler/XmlCrawler/obj/Debug/net5.0/XmlCrawler.pdb
